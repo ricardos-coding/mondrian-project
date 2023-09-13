@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+  }
+
+  /* creates a grid and adds a 9px gap to all those containers. */
+  .container,
+  .box3container,
+  .box4container,
+  .box5container{
+    display: grid;
+    gap: 9px;
+  }
+
+  /* containers 325px tall. */
+  .box3container,
+  .box4container{
+    height: 325px;
+  }
+
+  /* those boxes have to be kinda white. */
+  .box2,
+  .box3,
+  .box31,
+  .box4,
+  .box51{
+    background-color: #F0F1EC;
+  }
+
+  /* make those boxes spread on 2 spaces to the right. */
+  .box2,
+  .box4{
+    grid-column: span 2;
+  }
+
+  /* center all thos boxes in the middle of the body. */
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+  }
+
+  /* create a 748px by 748px black container with 3 rows and 3 columns. */
+  .container{
+    grid-template-columns: 320px 360px 50px;
+    grid-template-rows: 414px 295px 1fr;
+    background-color: #000;
+    width: 748px;
+    height: 748px;
+  }
+
+  /* create a red box. */
+  .box1{
+    background-color: #e72f24;
+  }
+
+  /* this box has to have only a column and 2 rows. */
+  .box3container{
+    grid-template-columns: 320px;
+    grid-template-rows: 295px 1fr;
+  }
+
+  /* this box has to have 2 columns and 2 rows. */
+  .box4container{
+    grid-template-columns: 198px 153px;
+    grid-template-rows: 295px 1fr;
+  }
+
+  /* create a yellow box. */
+  .box41{
+    background-color : #F9D01E;
+  }
+
+  /* create a dark grey box. */
+  .box42{
+    background-color: #232629;
+  }
+
+  /* this box has to have only a column and 2 rows. */
+  .box5container{
+    grid-template-columns: 50px;
+    grid-template-rows: 130px 1fr;
+    grid-row: span 2;
+  }
+
+  /* create a dark blue box with a black border. */
+  .box5{
+    background-color: #004592;
+    border-bottom: 10px solid #000;
+  }
